@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINX • Futuristic Profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader-screen" id="loaderScreen">
+    <div class="loader-core">
+      <div class="loader-logo-wrap">
+        <div class="loader-ring ring-a"></div>
+        <div class="loader-ring ring-b"></div>
+        <div class="loader-ring ring-c"></div>
+        <div class="loader-logo">FINX</div>
+      </div>
+
+      <p class="loader-text">Loading... Finx (1006001)</p>
+
+      <div class="loader-bar">
+        <span class="loader-fill" id="loaderFill"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intro overlay -->
+  <div class="intro-flash" id="introFlash"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-noise"></div>
+  <div class="particles" id="particles"></div>
+
+  <main class="scene">
+    <section class="card-shell reveal" id="mainReveal">
+      <div class="card-glow"></div>
+
+      <article class="profile-card" id="profileCard">
+        <aside class="left-panel">
+          <div class="avatar-wrap magnetic" data-strength="18">
+            <div class="avatar-ring"></div>
+            <img
+              src="https://xatimg.com/image/bEhwlYc38hpT.jpg"
+              alt="Profile picture"
+              class="avatar"
+              draggable="false"
+            />
+            <div class="avatar-shine"></div>
+          </div>
+
+          <div class="user-meta">
+            <h2 class="username-tag">
+              <span class="tag-text">Finx</span>
+              <span class="tag-id">(1006001)</span>
+            </h2>
+
+            <div class="mini-status">
+              <span class="status-dot"></span>
+              <span>Online</span>
+            </div>
+          </div>
+        </aside>
+
+        <section class="main-panel">
+          <div class="pattern-layer"></div>
+          <div class="scanline"></div>
+
+          <header class="hero">
+            <div class="title-block">
+              <h1 class="hero-title glitch" data-text="FINX">FINX</h1>
+              <p class="hero-subtitle">Not everything you lose is a loss.</p>
+
+              <div class="info-pills">
+                <span class="pill cyan">Based in Europe</span>
+                <span class="pill silver">Age: 29</span>
+                <span class="pill coral">Aquarius</span>
+              </div>
+            </div>
+
+            <div class="planet-zone magnetic" data-strength="22">
+              <div class="planet-wrap">
+                <div class="planet-glow"></div>
+                <div class="planet"></div>
+                <div class="ring"></div>
+                <div class="spark spark-1"></div>
+                <div class="spark spark-2"></div>
+                <div class="spark spark-3"></div>
+              </div>
+            </div>
+          </header>
+
+          <div class="content-grid">
+            <section class="friends-panel glass-card">
+              <div class="section-header">
+                <span class="section-line"></span>
+                <h3>Friends</h3>
+                <span class="section-line"></span>
+              </div>
+
+              <div class="friends-list">
+                <a class="friend magnetic cursor-hover" data-strength="10" href="http://xat.me/iSolange" target="_blank" rel="noopener noreferrer">
+                  <img src="https://xatimg.com/image/zfwahWJ77J7H.jpg" alt="Solange avatar" draggable="false" />
+                  <span>Solange</span>
+                  <i>↗</i>
+                </a>
+
+                <a class="friend magnetic cursor-hover" data-strength="10" href="http://xat.me/Senpaii" target="_blank" rel="noopener noreferrer">
+                  <img src="https://xatimg.com/image/Gse2k1QjdBOZ.jpg" alt="Sira avatar" draggable="false" />
+                  <span>Jay</span>
+                  <i>↗</i>
+                </a>
+
+                <a class="friend magnetic cursor-hover" data-strength="10" href="http://xat.me/Faby" target="_blank" rel="noopener noreferrer">
+                  <img src="https://xatimg.com/image/yzjVbexLFEkn.gif" alt="Jay avatar" draggable="false" />
+                  <span>Faby</span>
+                  <i>↗</i>
+                </a>
+
+                <a class="friend magnetic gif-friend cursor-hover" data-strength="10" href="http://xat.me/Sira" target="_blank" rel="noopener noreferrer">
+                  <img src="https://xatimg.com/image/adoPP7QbbktK.jpg" alt="Faby GIF avatar" draggable="false" />
+                  <span>Sira</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </section>
+
+            <section class="video-panel glass-card">
+              <div class="video-header">
+                <h3>Video</h3>
+                <span class="live-pill">♥</span>
+              </div>
+
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/QLzA9hCpRAQ?rel=0&modestbranding=1"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <div class="video-footer">
+                <div class="visualizer" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span>
+                </div>
+                <p>Curated by Finx</p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
